@@ -1,0 +1,34 @@
+[gd_scene load_steps=6 format=3 uid="uid://c3filyahunu04"]
+
+[ext_resource type="Shader" path="res://Materials/M_Unlit_Fog.gdshader" id="1_8ad7d"]
+[ext_resource type="Texture2D" uid="uid://cnrpvf7fvosg1" path="res://Textures/T_Gradient_32_Alt.png" id="2_g175y"]
+[ext_resource type="Script" path="res://TESTING/CameraShaderTest.gd" id="3_hxuie"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rqydn"]
+render_priority = 0
+shader = ExtResource("1_8ad7d")
+shader_parameter/use_fog = true
+shader_parameter/fog_color = Color(0.14902, 0.14902, 0.14902, 1)
+shader_parameter/fog_distance = 15.0
+shader_parameter/texture2d = ExtResource("2_g175y")
+
+[sub_resource type="BoxMesh" id="BoxMesh_v5oxq"]
+material = SubResource("ShaderMaterial_rqydn")
+
+[node name="Node3D" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.78727, 0)
+mesh = SubResource("BoxMesh_v5oxq")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 3.06318, 0, 0, 0, 1, 0, 0.78727, -4.71435)
+mesh = SubResource("BoxMesh_v5oxq")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.8875, 0, 0, 0, 3.06318, 0, 0, 0, 2.13819, 2.50549, 0.78727, -6.55011)
+mesh = SubResource("BoxMesh_v5oxq")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.939693, 0.0593911, -0.336824, 0, 0.984808, 0.173648, 0.34202, -0.163176, 0.925417, -1.198, 1.813, 5)
+script = ExtResource("3_hxuie")
