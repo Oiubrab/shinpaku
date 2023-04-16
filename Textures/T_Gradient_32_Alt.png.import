@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cnrpvf7fvosg1"
-path.s3tc="res://.godot/imported/T_Gradient_32_Alt.png-63329c414f4ef3de0fa97941a64665ff.s3tc.ctex"
+path.bptc="res://.godot/imported/T_Gradient_32_Alt.png-63329c414f4ef3de0fa97941a64665ff.bptc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,19 +12,19 @@ metadata={
 [deps]
 
 source_file="res://Textures/T_Gradient_32_Alt.png"
-dest_files=["res://.godot/imported/T_Gradient_32_Alt.png-63329c414f4ef3de0fa97941a64665ff.s3tc.ctex"]
+dest_files=["res://.godot/imported/T_Gradient_32_Alt.png-63329c414f4ef3de0fa97941a64665ff.bptc.ctex"]
 
 [params]
 
 compress/mode=2
-compress/high_quality=false
+compress/high_quality=true
 compress/lossy_quality=0.7
 compress/hdr_compression=1
-compress/normal_map=0
+compress/normal_map=2
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=0
+roughness/mode=1
 roughness/src_normal=""
 process/fix_alpha_border=true
 process/premult_alpha=false

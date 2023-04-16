@@ -1,0 +1,12 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://c31ctcif8emxk"]
+
+[ext_resource type="Shader" path="res://Materials/M_Unlit_Fog.gdshader" id="1_p4x7h"]
+[ext_resource type="Texture2D" uid="uid://cnrpvf7fvosg1" path="res://Textures/T_Gradient_32_Alt.png" id="2_bniv7"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_p4x7h")
+shader_parameter/use_fog = true
+shader_parameter/fog_color = Color(0.0627451, 0.0627451, 0.0627451, 1)
+shader_parameter/fog_distance = 8.0
+shader_parameter/texture2d = ExtResource("2_bniv7")

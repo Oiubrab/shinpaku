@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" uid="uid://c8j3ei4mhua6x" path="res://Models/gltf/ClassMockup_Room_00.gltf" id="1_mr8og"]
+[ext_resource type="Material" uid="uid://c31ctcif8emxk" path="res://Materials/M_Unlit_Walls.tres" id="2_7rm0u"]
+
+[node name="ClassMockup_Room_00" instance=ExtResource("1_mr8og")]
+
+[node name="ClassMockup_Room_002" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_7rm0u")

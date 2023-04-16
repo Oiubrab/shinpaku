@@ -1,34 +1,41 @@
-[gd_scene load_steps=6 format=3 uid="uid://c3filyahunu04"]
+[gd_scene load_steps=8 format=3 uid="uid://bq88w8rloqnmw"]
 
-[ext_resource type="Shader" path="res://Materials/M_Unlit_Fog.gdshader" id="1_8ad7d"]
-[ext_resource type="Texture2D" uid="uid://cnrpvf7fvosg1" path="res://Textures/T_Gradient_32_Alt.png" id="2_g175y"]
+[ext_resource type="Material" uid="uid://bxt7odrr5j7cl" path="res://Materials/M_Unlit_Props.tres" id="1_krwcq"]
 [ext_resource type="Script" path="res://TESTING/CameraShaderTest.gd" id="3_hxuie"]
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_rqydn"]
-render_priority = 0
-shader = ExtResource("1_8ad7d")
-shader_parameter/use_fog = true
-shader_parameter/fog_color = Color(0.14902, 0.14902, 0.14902, 1)
-shader_parameter/fog_distance = 15.0
-shader_parameter/texture2d = ExtResource("2_g175y")
+[ext_resource type="PackedScene" path="res://Models/Mockups/ClassMockup_Floor.tscn" id="4_xxci8"]
+[ext_resource type="PackedScene" path="res://Models/Mockups/ClassMockup_Room_00.tscn" id="5_t00vs"]
+[ext_resource type="PackedScene" path="res://Models/Mockups/ClassMockup_Room_01.tscn" id="6_shwc4"]
+[ext_resource type="PackedScene" path="res://Models/Mockups/ClassMockup_Room_02.tscn" id="7_77ek2"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_v5oxq"]
-material = SubResource("ShaderMaterial_rqydn")
+material = ExtResource("1_krwcq")
 
 [node name="Node3D" type="Node3D"]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.78727, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.68116, 0.78727, 0.736207)
 mesh = SubResource("BoxMesh_v5oxq")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 3.06318, 0, 0, 0, 1, 0, 0.78727, -4.71435)
+transform = Transform3D(1, 0, 0, 0, 3.06318, 0, 0, 0, 1, -4.58316, 0.78727, -4.71435)
 mesh = SubResource("BoxMesh_v5oxq")
 
 [node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
-transform = Transform3D(1.8875, 0, 0, 0, 3.06318, 0, 0, 0, 2.13819, 2.50549, 0.78727, -6.55011)
+transform = Transform3D(1.8875, 0, 0, 0, 3.06318, 0, 0, 0, 2.13819, 3.96214, 0.78727, -3.44552)
 mesh = SubResource("BoxMesh_v5oxq")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(0.939693, 0.0593911, -0.336824, 0, 0.984808, 0.173648, 0.34202, -0.163176, 0.925417, -1.198, 1.813, 5)
+transform = Transform3D(0.983553, 0.0313647, -0.177878, -3.50063e-09, 0.984808, 0.173648, 0.180622, -0.170792, 0.96861, -4.41014, 1.813, 5)
 script = ExtResource("3_hxuie")
+
+[node name="ClassMockup_Floor" parent="." instance=ExtResource("4_xxci8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -2)
+
+[node name="ClassMockup_Room_00" parent="." instance=ExtResource("5_t00vs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -1)
+
+[node name="ClassMockup_Room_01" parent="." instance=ExtResource("6_shwc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -1)
+
+[node name="ClassMockup_Room_02" parent="." instance=ExtResource("7_77ek2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, -1)

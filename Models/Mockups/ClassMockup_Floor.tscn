@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="PackedScene" uid="uid://h8wal2h2yysm" path="res://Models/gltf/ClassMockup_Floor.gltf" id="1_yk3yd"]
+[ext_resource type="Material" uid="uid://c31ctcif8emxk" path="res://Materials/M_Unlit_Walls.tres" id="2_hchig"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uf4tk"]
+size = Vector3(7, 0.2, 7)
+
+[node name="ClassMockup_Floor" instance=ExtResource("1_yk3yd")]
+
+[node name="ClassMockup_Floor2" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_hchig")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="ClassMockup_Floor2" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ClassMockup_Floor2/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.08, 0)
+shape = SubResource("BoxShape3D_uf4tk")
