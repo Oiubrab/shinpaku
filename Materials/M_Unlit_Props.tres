@@ -8,5 +8,5 @@ render_priority = 0
 shader = ExtResource("1_vj38r")
 shader_parameter/use_fog = true
 shader_parameter/fog_color = Color(0.054902, 0.054902, 0.054902, 1)
-shader_parameter/fog_distance = 4.0
+shader_parameter/fog_distance = 5.0
 shader_parameter/texture2d = ExtResource("2_13ghl")

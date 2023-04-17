@@ -3,7 +3,7 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://ccad8lryqsuf5"
+uid="uid://cv5x272j7h2xb"
 path="res://.godot/imported/Heartbeat.gltf-3120b0d91b20b6f1dde52a48f0090a1d.scn"
 
 [deps]
@@ -31,7 +31,7 @@ import_script/path=""
 _subresources={
 "animations": {
 "Hearbeat_00": {
-"save_to_file/enabled": true,
+"save_to_file/enabled": false,
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "",
 "settings/loop_mode": 1,

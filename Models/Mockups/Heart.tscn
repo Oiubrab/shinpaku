@@ -1,19 +1,30 @@
-[gd_scene load_steps=2 format=3 uid="uid://sqfgwlk2q4pr"]
+[gd_scene load_steps=4 format=3 uid="uid://cvy7yq3w827un"]
 
-[ext_resource type="PackedScene" uid="uid://ccad8lryqsuf5" path="res://Models/gltf/Heartbeat.gltf" id="1_av520"]
+[ext_resource type="PackedScene" uid="uid://cv5x272j7h2xb" path="res://Models/gltf/Heartbeat.gltf" id="1_av520"]
+[ext_resource type="Shader" path="res://Materials/M_Unlit_Fresnel.gdshader" id="2_jy1ul"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ckw8j"]
+render_priority = 0
+shader = ExtResource("2_jy1ul")
+shader_parameter/rim_amount = 1.666
+shader_parameter/base_color = Color(0.470588, 0, 0, 1)
+shader_parameter/rim_color = Color(0.686275, 0.701961, 0.705882, 1)
 
 [node name="Heartbeat" instance=ExtResource("1_av520")]
 transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
 
 [node name="Skeleton3D" parent="Heart_Armature" index="0"]
-bones/0/position = Vector3(0, 3.12565, 0)
+bones/0/position = Vector3(0, 3.09866, 0)
 bones/0/scale = Vector3(1, 1, 0.990607)
 bones/1/position = Vector3(0, 0.00931001, 0)
-bones/1/scale = Vector3(1.006, 1.30495, 1)
+bones/1/scale = Vector3(1.0261, 1.32772, 1)
 bones/2/position = Vector3(-0.00203597, 0.00561628, -0.00714086)
-bones/2/scale = Vector3(1, 1.30186, 1.35373)
+bones/2/scale = Vector3(1, 1.27487, 1.29974)
 bones/3/position = Vector3(0.00346044, -0.290235, 0.0181311)
-bones/3/scale = Vector3(1.1524, 1.30495, 1)
+bones/3/scale = Vector3(1.16044, 1.32772, 1)
+
+[node name="Heart_Mesh" parent="Heart_Armature/Skeleton3D" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_ckw8j")
 
 [node name="AnimationPlayer" parent="." index="1"]
 autoplay = "Hearbeat_00"
