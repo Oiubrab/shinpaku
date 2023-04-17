@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://bq88w8rloqnmw"]
+[gd_scene load_steps=9 format=3 uid="uid://bq88w8rloqnmw"]
 
 [ext_resource type="Material" uid="uid://bxt7odrr5j7cl" path="res://Materials/M_Unlit_Props.tres" id="1_krwcq"]
 [ext_resource type="Script" path="res://TESTING/CameraShaderTest.gd" id="3_hxuie"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" path="res://Models/Mockups/ClassMockup_Room_00.tscn" id="5_t00vs"]
 [ext_resource type="PackedScene" path="res://Models/Mockups/ClassMockup_Room_01.tscn" id="6_shwc4"]
 [ext_resource type="PackedScene" path="res://Models/Mockups/ClassMockup_Room_02.tscn" id="7_77ek2"]
+[ext_resource type="PackedScene" uid="uid://sqfgwlk2q4pr" path="res://Models/Mockups/Heart.tscn" id="7_uhv53"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_v5oxq"]
 material = ExtResource("1_krwcq")
@@ -39,3 +40,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -1)
 
 [node name="ClassMockup_Room_02" parent="." instance=ExtResource("7_77ek2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, -1)
+
+[node name="Heartbeat" parent="." instance=ExtResource("7_uhv53")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -2.78883, 0.02, 2.81095)
