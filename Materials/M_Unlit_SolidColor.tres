@@ -1,0 +1,8 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://c1wln3utx43m7"]
+
+[ext_resource type="Shader" path="res://Materials/M_Unlit_Solid.gdshader" id="1_bkxdm"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_bkxdm")
+shader_parameter/base_color = Color(0.458824, 0, 0, 1)

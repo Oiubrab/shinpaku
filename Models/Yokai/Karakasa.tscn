@@ -1,0 +1,70 @@
+[gd_scene load_steps=4 format=3 uid="uid://e277wm7r2bd"]
+
+[ext_resource type="PackedScene" uid="uid://d3i3h013qr" path="res://Models/gltf/Karakasa.gltf" id="1_yi3fb"]
+[ext_resource type="Material" uid="uid://bxt7odrr5j7cl" path="res://Materials/M_Unlit_Props.tres" id="2_i0dph"]
+[ext_resource type="Material" uid="uid://c1wln3utx43m7" path="res://Materials/M_Unlit_SolidColor.tres" id="3_4h0os"]
+
+[node name="Karakasa" instance=ExtResource("1_yi3fb")]
+
+[node name="Skeleton3D" parent="Karakasa-Skeleton" index="0"]
+bones/0/position = Vector3(0, 0.0810412, 0)
+bones/1/position = Vector3(6.26423e-09, -0.0262741, 0.569462)
+bones/1/rotation = Quaternion(0.693575, 8.26805e-08, 8.58766e-08, 0.720385)
+bones/1/scale = Vector3(1.10344, 1, 1)
+bones/2/rotation = Quaternion(-0.188502, 1.23858e-14, 2.05568e-15, 0.982073)
+bones/3/rotation = Quaternion(-5.04328e-08, 0.652113, 0.758122, 1.0832e-07)
+bones/3/scale = Vector3(1, 1, 1)
+bones/4/rotation = Quaternion(-0.225372, 3.04235e-15, 2.27034e-16, 0.974273)
+bones/5/rotation = Quaternion(-0.189784, -5.88297e-29, 1.22231e-22, 0.981826)
+bones/6/rotation = Quaternion(0.0410116, -6.40481e-29, -9.33459e-29, 0.999159)
+bones/6/scale = Vector3(1, 1, 1)
+bones/8/rotation = Quaternion(-0.731062, -8.13378e-08, -8.71494e-08, 0.682311)
+bones/10/position = Vector3(0.575529, -0.163662, 0.0329205)
+bones/12/position = Vector3(-0.469876, -0.159634, 0.18706)
+bones/14/rotation = Quaternion(-0.596737, -0.055123, -0.400778, 0.692996)
+bones/15/rotation = Quaternion(-0.583941, 0.0182664, 0.426796, 0.690307)
+bones/16/position = Vector3(0.287075, -0.0218507, 0.68606)
+bones/16/rotation = Quaternion(0.057279, 0.234917, -0.348395, 0.905623)
+bones/18/rotation = Quaternion(-0.102899, -0.0704075, -0.0843781, 0.988602)
+bones/20/position = Vector3(-0.287075, -0.0218507, 0.68606)
+bones/20/rotation = Quaternion(0.0657356, -0.278977, 0.34115, 0.895247)
+bones/22/rotation = Quaternion(-0.103922, 0.0665994, 0.0885429, 0.988395)
+bones/24/position = Vector3(-1.358e-08, 0, 0.0702275)
+bones/25/rotation = Quaternion(0, 0, 1, 0)
+bones/27/position = Vector3(6.26423e-09, -0.0262741, 0.569462)
+bones/27/rotation = Quaternion(0.693575, 8.26805e-08, 8.58766e-08, 0.720385)
+bones/28/rotation = Quaternion(1.35048e-07, -0.0507991, -0.998709, 2.72328e-08)
+bones/29/rotation = Quaternion(-0.199122, -2.64794e-07, -7.12114e-08, 0.979975)
+bones/30/rotation = Quaternion(0.653481, 6.52881e-09, 4.70381e-08, 0.756943)
+bones/32/position = Vector3(-0.287075, -0.0218508, 0.68606)
+bones/32/rotation = Quaternion(0.0657355, -0.278977, 0.34115, 0.895247)
+
+[node name="KK_Arms" parent="Karakasa-Skeleton/Skeleton3D" index="0"]
+surface_material_override/0 = ExtResource("2_i0dph")
+
+[node name="KK_Body" parent="Karakasa-Skeleton/Skeleton3D" index="1"]
+surface_material_override/0 = ExtResource("2_i0dph")
+
+[node name="KK_Body001" parent="Karakasa-Skeleton/Skeleton3D" index="2"]
+surface_material_override/0 = ExtResource("2_i0dph")
+
+[node name="KK_Eye" parent="Karakasa-Skeleton/Skeleton3D" index="3"]
+surface_material_override/0 = ExtResource("2_i0dph")
+
+[node name="KK_Eye001" parent="Karakasa-Skeleton/Skeleton3D" index="4"]
+surface_material_override/0 = ExtResource("2_i0dph")
+
+[node name="KK_Eye002" parent="Karakasa-Skeleton/Skeleton3D" index="5"]
+surface_material_override/0 = ExtResource("3_4h0os")
+
+[node name="KK_Hands" parent="Karakasa-Skeleton/Skeleton3D" index="6"]
+surface_material_override/0 = ExtResource("2_i0dph")
+
+[node name="KK_Legs" parent="Karakasa-Skeleton/Skeleton3D" index="7"]
+surface_material_override/0 = ExtResource("2_i0dph")
+
+[node name="KK_Tongue" parent="Karakasa-Skeleton/Skeleton3D" index="8"]
+surface_material_override/0 = ExtResource("2_i0dph")
+
+[node name="AnimationPlayer" parent="." index="1"]
+autoplay = "Karakasa-Idle"

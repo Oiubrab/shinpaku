@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bq88w8rloqnmw"]
+[gd_scene load_steps=11 format=3 uid="uid://dotmfek1bshbj"]
 
 [ext_resource type="Material" uid="uid://bxt7odrr5j7cl" path="res://Materials/M_Unlit_Props.tres" id="1_krwcq"]
 [ext_resource type="Script" path="res://TESTING/CameraShaderTest.gd" id="3_hxuie"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" path="res://Models/Mockups/ClassMockup_Room_01.tscn" id="6_shwc4"]
 [ext_resource type="PackedScene" path="res://Models/Mockups/ClassMockup_Room_02.tscn" id="7_77ek2"]
 [ext_resource type="PackedScene" uid="uid://cvy7yq3w827un" path="res://Models/Mockups/Heart.tscn" id="7_uhv53"]
+[ext_resource type="PackedScene" uid="uid://e277wm7r2bd" path="res://Models/Yokai/Karakasa.tscn" id="8_5cyoa"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_v5oxq"]
 material = ExtResource("1_krwcq")
@@ -21,7 +22,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.68116, 0.78727, 0.736207)
 mesh = SubResource("BoxMesh_v5oxq")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.408, 0, 0, 0, 1.25, 0, 0, 0, 0.408, -4.58316, 0.743353, -4.71435)
+transform = Transform3D(0.408, 0, 0, 0, 1.25, 0, 0, 0, 0.408, -6.48965, 0.743353, -4.71435)
 mesh = SubResource("BoxMesh_v5oxq")
 
 [node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
@@ -49,3 +50,40 @@ transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -2.78883, 0.02, 2.81095
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_le4t3")
+
+[node name="Karakasa" parent="." instance=ExtResource("8_5cyoa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.15595, 0.18173, -5.72528)
+
+[node name="Skeleton3D" parent="Karakasa/Karakasa-Skeleton" index="0"]
+bones/0/position = Vector3(0, 0.116287, 0)
+bones/1/position = Vector3(6.26423e-09, -0.0262741, 0.604707)
+bones/1/rotation = Quaternion(0.718529, 8.56554e-08, 8.29097e-08, 0.695497)
+bones/1/scale = Vector3(1.05057, 1, 1)
+bones/2/rotation = Quaternion(-0.0925779, 1.45814e-14, 1.2891e-15, 0.995705)
+bones/3/rotation = Quaternion(-7.64819e-08, 0.654893, 0.75572, 9.07609e-08)
+bones/3/scale = Vector3(1, 1, 1)
+bones/4/rotation = Quaternion(-0.198497, 2.21189e-15, 3.38553e-16, 0.980102)
+bones/5/rotation = Quaternion(-0.0881806, -1.29907e-23, -2.52776e-22, 0.996104)
+bones/6/rotation = Quaternion(0.182101, -1.14227e-28, -1.42698e-28, 0.98328)
+bones/6/scale = Vector3(1, 1, 1)
+bones/8/rotation = Quaternion(-0.718925, -8.28609e-08, -8.57025e-08, 0.695088)
+bones/10/position = Vector3(0.575529, -0.163662, 0.0329205)
+bones/12/position = Vector3(-0.469876, -0.159634, 0.18706)
+bones/14/rotation = Quaternion(-0.657758, 0.0672256, -0.289952, 0.691927)
+bones/15/rotation = Quaternion(-0.649722, -0.10304, 0.31781, 0.682818)
+bones/16/position = Vector3(0.27332, -0.0300733, 0.7213)
+bones/16/rotation = Quaternion(0.0420569, 0.253736, -0.161275, 0.952806)
+bones/18/rotation = Quaternion(-0.102899, -0.0704075, -0.0843781, 0.988602)
+bones/20/position = Vector3(-0.27332, -0.0300733, 0.7213)
+bones/20/rotation = Quaternion(0.0414147, -0.29856, 0.15459, 0.940877)
+bones/22/rotation = Quaternion(-0.103922, 0.0665994, 0.0885429, 0.988395)
+bones/24/position = Vector3(-5.17677e-09, 0, 0.105473)
+bones/27/position = Vector3(6.26423e-09, -0.0262741, 0.604707)
+bones/27/rotation = Quaternion(0.718529, 8.56553e-08, 8.29097e-08, 0.695497)
+bones/28/rotation = Quaternion(1.42361e-07, -0.0795181, -0.996833, 3.71172e-08)
+bones/29/rotation = Quaternion(-0.197016, -2.64909e-07, -7.04584e-08, 0.9804)
+bones/30/rotation = Quaternion(0.598544, 3.19955e-09, 4.73811e-08, 0.80109)
+bones/32/position = Vector3(-0.27332, -0.0300733, 0.7213)
+bones/32/rotation = Quaternion(0.0414147, -0.29856, 0.15459, 0.940877)
+
+[editable path="Karakasa"]
