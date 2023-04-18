@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3]
 
-[ext_resource type="PackedScene" uid="uid://h8wal2h2yysm" path="res://Models/gltf/ClassMockup_Floor.gltf" id="1_yk3yd"]
+[ext_resource type="PackedScene" uid="uid://h8wal2h2yysm" path="res://Models/_gltf/ClassMockup_Floor.gltf" id="1_yk3yd"]
 [ext_resource type="Material" uid="uid://c31ctcif8emxk" path="res://Materials/M_Unlit_Walls.tres" id="2_hchig"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_uf4tk"]

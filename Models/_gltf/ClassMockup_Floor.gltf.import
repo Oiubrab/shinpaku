@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://q0p5rygy0ynu"
-path="res://.godot/imported/ClassMockup_Room_01.gltf-ff6c3c4175f52c2875ba40af3f158704.scn"
+uid="uid://h8wal2h2yysm"
+path="res://.godot/imported/ClassMockup_Floor.gltf-5ea86d5eafc1d9a44156bfedbbe87b00.scn"
 
 [deps]
 
-source_file="res://Models/gltf/ClassMockup_Room_01.gltf"
-dest_files=["res://.godot/imported/ClassMockup_Room_01.gltf-ff6c3c4175f52c2875ba40af3f158704.scn"]
+source_file="res://Models/_gltf/ClassMockup_Floor.gltf"
+dest_files=["res://.godot/imported/ClassMockup_Floor.gltf-5ea86d5eafc1d9a44156bfedbbe87b00.scn"]
 
 [params]
 
@@ -30,9 +30,10 @@ animation/remove_immutable_tracks=true
 import_script/path=""
 _subresources={
 "nodes": {
-"PATH:ClassMockup_Room_012": {
-"generate/physics": true,
-"physics/shape_type": 2
+"PATH:ClassMockup_Floor2": {
+"physics/shape_type": 3,
+"primitive/position": Vector3(0, -0.08, 0),
+"primitive/size": Vector3(7, 0.4, 7)
 }
 }
 }

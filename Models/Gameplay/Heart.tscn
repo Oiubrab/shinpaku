@@ -1,6 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://cvy7yq3w827un"]
+[gd_scene load_steps=4 format=3 uid="uid://b1r5w3ctyy6my"]
 
-[ext_resource type="PackedScene" uid="uid://cv5x272j7h2xb" path="res://Models/gltf/Heartbeat.gltf" id="1_av520"]
+[ext_resource type="PackedScene" uid="uid://cv5x272j7h2xb" path="res://Models/_gltf/Heartbeat.gltf" id="1_bv8tc"]
 [ext_resource type="Shader" path="res://Materials/M_Unlit_Fresnel.gdshader" id="2_jy1ul"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ckw8j"]
@@ -10,7 +10,7 @@ shader_parameter/rim_amount = 1.666
 shader_parameter/base_color = Color(0.470588, 0, 0, 1)
 shader_parameter/rim_color = Color(0.686275, 0.701961, 0.705882, 1)
 
-[node name="Heartbeat" instance=ExtResource("1_av520")]
+[node name="Heartbeat" instance=ExtResource("1_bv8tc")]
 transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
 
 [node name="Skeleton3D" parent="Heart_Armature" index="0"]

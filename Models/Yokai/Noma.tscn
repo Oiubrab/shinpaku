@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="PackedScene" uid="uid://bu05b0wlm5vq3" path="res://Models/_gltf/Noma.gltf" id="1_k0ovl"]
+[ext_resource type="Material" uid="uid://bxt7odrr5j7cl" path="res://Materials/M_Unlit_Props.tres" id="2_jed5k"]
+[ext_resource type="Material" uid="uid://c1wln3utx43m7" path="res://Materials/M_Unlit_SolidColor.tres" id="3_hwnm0"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_5vs6e"]
+radius = 0.694319
+
+[node name="Noma" instance=ExtResource("1_k0ovl")]
+
+[node name="Skeleton3D" parent="Armature" index="0"]
+bones/1/rotation = Quaternion(0, 0, -0.00587136, 0.999983)
+bones/1/scale = Vector3(1, 1, 0.998673)
+bones/4/position = Vector3(0, -0.000875339, 0.595859)
+bones/4/rotation = Quaternion(-0.0475183, 0.0491886, 0.00234285, 0.997656)
+bones/6/position = Vector3(0, 0, 0.312356)
+bones/6/rotation = Quaternion(0, 0, -0.0203501, 0.999793)
+bones/7/rotation = Quaternion(0.707626, 1.50593e-05, -1.50593e-05, 0.706587)
+bones/7/scale = Vector3(1.00171, 0.996594, 1.00171)
+
+[node name="N_Body" parent="Armature/Skeleton3D" index="0"]
+surface_material_override/0 = ExtResource("2_jed5k")
+
+[node name="N_Eye" parent="Armature/Skeleton3D" index="1"]
+surface_material_override/0 = ExtResource("2_jed5k")
+
+[node name="N_Eye001" parent="Armature/Skeleton3D" index="2"]
+surface_material_override/0 = ExtResource("3_hwnm0")
+
+[node name="N_Pot" parent="Armature/Skeleton3D" index="3"]
+surface_material_override/0 = ExtResource("2_jed5k")
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="Armature" index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Armature/CharacterBody3D" index="0"]
+transform = Transform3D(0.999942, 0.0108034, 0, -0.0108034, 0.999942, 0, 0, 0, 1, 0, 1.00164, 0)
+shape = SubResource("CapsuleShape3D_5vs6e")
+
+[node name="AnimationPlayer" parent="." index="1"]
+autoplay = "Noma_Idle"

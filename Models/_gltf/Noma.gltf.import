@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://d3i3h013qr"
-path="res://.godot/imported/Karakasa.gltf-fc37b435340a51614acad700753e15bd.scn"
+uid="uid://bu05b0wlm5vq3"
+path="res://.godot/imported/Noma.gltf-326c6c60fae503d91b322c635c2b23ea.scn"
 
 [deps]
 
-source_file="res://Models/gltf/Karakasa.gltf"
-dest_files=["res://.godot/imported/Karakasa.gltf-fc37b435340a51614acad700753e15bd.scn"]
+source_file="res://Models/_gltf/Noma.gltf"
+dest_files=["res://.godot/imported/Noma.gltf-326c6c60fae503d91b322c635c2b23ea.scn"]
 
 [params]
 
@@ -30,7 +30,7 @@ animation/remove_immutable_tracks=true
 import_script/path=""
 _subresources={
 "animations": {
-"Karakasa-Idle": {
+"Noma_Idle": {
 "save_to_file/enabled": false,
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "",

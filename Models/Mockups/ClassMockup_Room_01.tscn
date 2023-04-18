@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3]
 
-[ext_resource type="PackedScene" uid="uid://q0p5rygy0ynu" path="res://Models/gltf/ClassMockup_Room_01.gltf" id="1_l4tux"]
+[ext_resource type="PackedScene" uid="uid://q0p5rygy0ynu" path="res://Models/_gltf/ClassMockup_Room_01.gltf" id="1_l4tux"]
 [ext_resource type="Material" uid="uid://c31ctcif8emxk" path="res://Materials/M_Unlit_Walls.tres" id="2_rnfuu"]
 
 [node name="ClassMockup_Room_01" instance=ExtResource("1_l4tux")]

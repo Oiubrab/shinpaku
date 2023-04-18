@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://h8wal2h2yysm"
-path="res://.godot/imported/ClassMockup_Floor.gltf-1998c6d2c98232554e5e88459e2d671c.scn"
+uid="uid://csuui6nc06gf6"
+path="res://.godot/imported/ClassMockup_Room_02.gltf-69a50f377eb8471c1868ad3168ace86a.scn"
 
 [deps]
 
-source_file="res://Models/gltf/ClassMockup_Floor.gltf"
-dest_files=["res://.godot/imported/ClassMockup_Floor.gltf-1998c6d2c98232554e5e88459e2d671c.scn"]
+source_file="res://Models/_gltf/ClassMockup_Room_02.gltf"
+dest_files=["res://.godot/imported/ClassMockup_Room_02.gltf-69a50f377eb8471c1868ad3168ace86a.scn"]
 
 [params]
 
@@ -23,17 +23,16 @@ meshes/create_shadow_meshes=true
 meshes/light_baking=0
 meshes/lightmap_texel_size=0.2
 skins/use_named_skins=true
-animation/import=true
+animation/import=false
 animation/fps=30
 animation/trimming=false
 animation/remove_immutable_tracks=true
 import_script/path=""
 _subresources={
 "nodes": {
-"PATH:ClassMockup_Floor2": {
-"physics/shape_type": 3,
-"primitive/position": Vector3(0, -0.08, 0),
-"primitive/size": Vector3(7, 0.4, 7)
+"PATH:ClassMockup_Room_022": {
+"generate/physics": true,
+"physics/shape_type": 2
 }
 }
 }

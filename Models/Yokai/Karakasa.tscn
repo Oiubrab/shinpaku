@@ -1,6 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://e277wm7r2bd"]
+[gd_scene load_steps=5 format=3]
 
-[ext_resource type="PackedScene" uid="uid://d3i3h013qr" path="res://Models/gltf/Karakasa.gltf" id="1_yi3fb"]
+[ext_resource type="PackedScene" uid="uid://d3i3h013qr" path="res://Models/_gltf/Karakasa.gltf" id="1_yi3fb"]
 [ext_resource type="Material" uid="uid://bxt7odrr5j7cl" path="res://Materials/M_Unlit_Props.tres" id="2_i0dph"]
 [ext_resource type="Material" uid="uid://c1wln3utx43m7" path="res://Materials/M_Unlit_SolidColor.tres" id="3_4h0os"]
 
