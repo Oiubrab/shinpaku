@@ -1,8 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://e277wm7r2bd"]
+[gd_scene load_steps=5 format=3 uid="uid://e277wm7r2bd"]
 
 [ext_resource type="PackedScene" uid="uid://d3i3h013qr" path="res://Models/gltf/Karakasa.gltf" id="1_yi3fb"]
 [ext_resource type="Material" uid="uid://bxt7odrr5j7cl" path="res://Materials/M_Unlit_Props.tres" id="2_i0dph"]
 [ext_resource type="Material" uid="uid://c1wln3utx43m7" path="res://Materials/M_Unlit_SolidColor.tres" id="3_4h0os"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_2qj3i"]
+radius = 0.636
+height = 1.69103
 
 [node name="Karakasa" instance=ExtResource("1_yi3fb")]
 
@@ -13,11 +17,9 @@ bones/1/rotation = Quaternion(0.693575, 8.26805e-08, 8.58766e-08, 0.720385)
 bones/1/scale = Vector3(1.10344, 1, 1)
 bones/2/rotation = Quaternion(-0.188502, 1.23858e-14, 2.05568e-15, 0.982073)
 bones/3/rotation = Quaternion(-5.04328e-08, 0.652113, 0.758122, 1.0832e-07)
-bones/3/scale = Vector3(1, 1, 1)
 bones/4/rotation = Quaternion(-0.225372, 3.04235e-15, 2.27034e-16, 0.974273)
 bones/5/rotation = Quaternion(-0.189784, -5.88297e-29, 1.22231e-22, 0.981826)
 bones/6/rotation = Quaternion(0.0410116, -6.40481e-29, -9.33459e-29, 0.999159)
-bones/6/scale = Vector3(1, 1, 1)
 bones/8/rotation = Quaternion(-0.731062, -8.13378e-08, -8.71494e-08, 0.682311)
 bones/10/position = Vector3(0.575529, -0.163662, 0.0329205)
 bones/12/position = Vector3(-0.469876, -0.159634, 0.18706)
@@ -65,6 +67,12 @@ surface_material_override/0 = ExtResource("2_i0dph")
 
 [node name="KK_Tongue" parent="Karakasa-Skeleton/Skeleton3D" index="8"]
 surface_material_override/0 = ExtResource("2_i0dph")
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="Karakasa-Skeleton/Skeleton3D" index="9"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Karakasa-Skeleton/Skeleton3D/CharacterBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.861956, 0)
+shape = SubResource("CapsuleShape3D_2qj3i")
 
 [node name="AnimationPlayer" parent="." index="1"]
 autoplay = "Karakasa-Idle"
